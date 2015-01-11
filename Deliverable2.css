@@ -10,7 +10,6 @@ body{
 	padding: 10px 30px 10px 30px;
 	margin-top:100px;
 	overflow:hidden;
-	border: 4px dotted red;
 }
 
 .left{
@@ -22,9 +21,9 @@ body{
 
 .right{
 	float:right;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	padding:5px;
+	margin-left: 1px;
+	margin-bottom: 1px;
+	padding:2px;
 }
 
 aside{
@@ -38,7 +37,7 @@ aside img{
 
 article{
 	width:650px;
-	border:1px solid red;
+	border:1px solid black;
 }
 
 article img {
@@ -53,21 +52,50 @@ header {
 	clear:both;
 	width:100%;
 	top:0;
+	height:50px;
 	left:0;
+	display: block;
+	margin-bottom: 0px;
 }
 
 nav{
 	font-family: 'Lobster', Arial, cursive;
 	position:fixed;
-	background-color:yellow;
+	background-color:#3ADF00;
 	color:white;
 	clear:both;
 	width:100%;
-	top:50;
+	top:50px;
+	/*height:40px;*/
 	left:0;
+	border-bottom: 3px solid black;
+	clear: both;
 }
-h1{
+
+nav a:link {
+    color: #0B3B0B;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #A4A4A4;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #0B3B0B;
+    text-decoration:underline;
+}
+
+nav a:active {
+    color: #0000FF;
+    text-decoration:underline;
+}
+
+header h1{
 	font-family: 'Lobster', Arial, cursive;
+	margin-top: 0px;
+	padding-top: 2px;
 }
 
 ul {
@@ -76,12 +104,15 @@ ul {
     padding: 0;
     text-align: right;
 } 
-
-li {
+nav {
+	margin-top: 0px;
+}
+nav ul li {
     display: inline;
     margin-right: 10px;
+    font-size: 1.2em;
 }
-
+ 
 footer {
 	text-align: center;
 	background-color: #ACFA58;
